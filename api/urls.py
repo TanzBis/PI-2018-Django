@@ -4,7 +4,6 @@ from django.urls import path, include
 from follows.router import router as follows_router
 from users.router import router as users_router
 from profiles.router import router as profiles_router
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
