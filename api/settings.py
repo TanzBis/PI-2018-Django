@@ -46,8 +46,12 @@ INSTALLED_APPS = [
     'users',
     'follows',
     'profiles',
-    'posts'
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    "SCHEMA": "api.schema.schema"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
