@@ -13,4 +13,4 @@ class Query(UsersQuery, FollowsQuery, ProfilesQuery, ObjectType):
 class Mutation(ProfileMutation):
   pass
 
-schema = Schema(query=Query, mutation=Mutation)
+schema = Schema(query=Query, mutation=Mutation)  
