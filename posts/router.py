@@ -1,5 +1,7 @@
 from rest_framework import routers
-from users.views import UserViewSet
+
+from posts.views import postsViewSet, postStatusViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
+router.register(r'post', postsViewSet)
+router.register(r'post/status', postStatusViewSet)
